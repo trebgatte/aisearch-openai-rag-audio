@@ -69,7 +69,8 @@ export default function useRealTime({
             session: {
                 turn_detection: {
                     type: "server_vad"
-                }
+                },
+                voice:"arbor"
             }
         };
 
