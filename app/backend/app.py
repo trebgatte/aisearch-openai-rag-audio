@@ -36,7 +36,7 @@ async def create_app():
     app = web.Application()
 
     rtmt = RTMiddleTier(llm_endpoint, llm_deployment, llm_credential)
-    rtmt.system_message = "You are a helpful assistant. Only answer questions based on information you searched in the knowledge base, accessible with the 'search' tool. " + \
+    rtmt.system_message = "You are a helpful HR assistant for Contoso Company. All questions you are asked will refer only to Contoso. Only answer questions based on information you searched in the knowledge base, accessible with the 'search' tool. " + \
                           "The user is listening to answers with audio, so it's *super* important that answers are as short as possible, a single sentence if at all possible. " + \
                           "Never read file names or source names or keys out loud. " + \
                           "Always use the following step-by-step instructions to respond: \n" + \
