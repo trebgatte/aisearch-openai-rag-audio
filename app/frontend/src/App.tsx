@@ -12,8 +12,7 @@ import useAudioRecorder from "@/hooks/useAudioRecorder";
 import useAudioPlayer from "@/hooks/useAudioPlayer";
 
 import { GroundingFile, ToolResult } from "./types";
-
-import logo from "./assets/logo150.svg";
+import logo from "./assets/logo150.svg"
 
 function App() {
     const [isRecording, setIsRecording] = useState(false);
