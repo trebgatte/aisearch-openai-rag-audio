@@ -1,7 +1,7 @@
 {
     "app": {
         "title": "Ask me about your benefits.",
-        "footer": "Built by Marquee Insights.",
+        "footer": "MarqueeInsights.com, 2024",
         "stopRecording": "Stop recording",
         "startRecording": "Start recording",
         "stopConversation": "Stop conversation"
