@@ -68,13 +68,13 @@ function App() {
                 <img src={logo} alt="MI logo" className="h-16 w-16" />
             </div>
             <main className="flex flex-grow flex-col items-center justify-center">
-                <h1 className="mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
+                <h1 className="mb-8 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
                     {t("app.title")}
                 </h1>
-                <div className="mb-4 flex flex-col items-center justify-center">
+                <div className="mb-4 flex flex-col items-center justify-center bg-blue-50">
                     <Button
                         onClick={onToggleListening}
-                        className={`h-12 w-60 ${isRecording ? "bg-red-600 hover:bg-red-700" : "bg-purple-500 hover:bg-purple-600"}`}
+                        className={`h-12 w-60 ${isRecording ? "bg-red-600 hover:bg-red-700" : "bg-green-500 hover:bg-green-600"}`}
                         aria-label={isRecording ? t("app.stopRecording") : t("app.startRecording")}
                     >
                         {isRecording ? (
