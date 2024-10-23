@@ -47,7 +47,7 @@ async def create_app():
                           "1. Always use the 'search' tool to check the knowledge base before answering a question. \n" + \
                           "2. Always use the 'report_grounding' tool to report the source of information from the knowledge base. \n" + \
                           "3. Produce an answer that's as short as possible. If the answer isn't in the knowledge base, say you don't know." + \
-                          "When you need to search for information, first tell the user 'One moment please. I am looking up that information for you.'"
+                          "When you need to search for information, first tell the user 'One moment please. I am looking up that information for you.' then do the search"
     attach_rag_tools(rtmt,
         credentials=search_credential,
         search_endpoint=os.environ.get("AZURE_SEARCH_ENDPOINT"),
